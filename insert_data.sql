@@ -22,7 +22,8 @@ INSERT INTO Album (Name, ReleaseYear) VALUES
 ('Nevermind', 1991),
 ('25', 2015),
 ('Show Us Your Hits', 2011),
-('My way', 1964);
+('My way', 1964),
+('Demo', 2020);
 
 -- Вставка данных в таблицу Исполнитель_Жанр
 INSERT INTO ArtistGenre (ArtistID, GenreID) VALUES
@@ -31,7 +32,8 @@ INSERT INTO ArtistGenre (ArtistID, GenreID) VALUES
 (3, 2),  -- Adele - Pop
 (4, 2), -- Beyoncé - Pop
 (5, 4),  -- Bloodhound Gang - Punk
-(6, 5); -- Frank Sinatra - Jazz
+(6, 5), -- Frank Sinatra - Jazz
+(2, 1);  -- Nirvana - Rock
 
 -- Вставка данных в таблицу Исполнитель_Альбом
 INSERT INTO ArtistAlbum (ArtistID, AlbumID) VALUES
@@ -39,7 +41,8 @@ INSERT INTO ArtistAlbum (ArtistID, AlbumID) VALUES
 (2, 2),  -- Nirvana - Nevermind
 (3, 3), -- Adele - 25
 (5, 4),  -- Bloodhound Gang - Show Us Your Hits
-(5, 5); -- Frank Sinatra - My way
+(6, 5), -- Frank Sinatra - My way
+(5, 6); -- Bloodhound Gang - Demo
 
 -- Вставка данных в таблицу Трек
 INSERT INTO Track (Name, Duration, AlbumID) VALUES
@@ -50,7 +53,14 @@ INSERT INTO Track (Name, Duration, AlbumID) VALUES
 ('Hello', 295, 3),          -- 25
 ('Someone Like You', 285, 3), -- 25
 ('I Hope You Die', 300, 4),  -- Show Us Your Hits
-('My Way', 258, 5); -- My way
+('My Way', 258, 5), -- My way
+('myself', 241, 5),
+('by myself', 256, 5),
+('bemy self', 254, 5),
+('myself by', 145, 5),
+('by myself by', 235, 5),
+('beemy', 251, 5),
+('premyne', 200, 5);
 
 -- Вставка данных в таблицу Сборник
 INSERT INTO Compilation (Name, ReleaseYear) VALUES
@@ -70,3 +80,4 @@ INSERT INTO CompilationTrack (CompilationID, TrackID) VALUES
 (3, 6), -- Someone Like You
 (5, 7), -- I Hope You Die 
 (1, 8); -- My Way
+
